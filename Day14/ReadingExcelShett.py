@@ -1,7 +1,7 @@
 import openpyxl
 
 # file-->workbook--->sheets-->Rows--->Cells
-file = "Book1.xlsx"
+file = "C:/Users/SARIKA/Desktop/Excel/Test1.xlsx"
 workbook = openpyxl.load_workbook(file)
 sheet = workbook["Sheet1"]
 

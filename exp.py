@@ -21,9 +21,5 @@ connect.close()"""
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 
-driver=webdriver.Chrome()
-driver.get("https://demo.nopcommerce.com/register?returnUrl=%2F")
-driver.maximize_window()
-dob_ele=driver.find_elements_by_xpath("//select[@name='DateOfBirthDay']")
-dob_elm=Select(dob_ele)
-for i in range(len(dob_elm)):
+
+

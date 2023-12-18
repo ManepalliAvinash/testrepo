@@ -10,7 +10,7 @@ driver.find_element(By.XPATH,"//a[normalize-space()='Iframe with in an Iframe']"
 outer_frame=driver.find_element(By.XPATH,"//iframe[@src='MultipleFrames.html']")
 driver.switch_to.frame(outer_frame)
 
-inner_frame=driver.find_element(By.XPATH,"/html/body/section/div/div/iframe")
+inner_frame=driver.find_element(By.CSS_SELECTOR,"iframe[src='SingleFrame.html']")
 driver.switch_to.frame(inner_frame)
 
 driver.find_element(By.XPATH,"//input[@type='text']").send_keys("groot")

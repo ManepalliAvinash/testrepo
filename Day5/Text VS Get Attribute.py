@@ -10,4 +10,4 @@ element.send_keys("groot@gmail.com")
 print("result of text: ",element.text)
 print("result of get attribute(): ",element.get_attribute("value"))
 
-driver.quit() 
+driver.quit()

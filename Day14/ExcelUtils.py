@@ -15,8 +15,8 @@ def write(FileName,SheetName,RowNo,ColumnNo,CellValue):
 
 def get_rows(FileName,SheetName):
     file=FileName
-    woorkbook=openpyxl.load_workbook(file)
-    sheet=woorkbook[SheetName]
+    workbook=openpyxl.load_workbook(file)
+    sheet=workbook[SheetName]
     return(sheet.max_row)
 
 

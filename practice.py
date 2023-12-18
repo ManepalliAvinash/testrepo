@@ -1098,7 +1098,7 @@ for i in range(1,rows+1):
     stars="*"*(i*2-1)
     print(spaces+stars)"""
 
-string=input("enter the string: ")
+"""string=input("enter the string: ")
 
 for i in range(0,len(string),2):
     even_position=string[i]
@@ -1107,4 +1107,53 @@ print()
 for i in range(1,len(string),2):
     odd_postion=string[i]
     print(odd_postion,end="")
+print()"""
+
+"""string=input("enter the string: ")
+for i in range(0,len(string),2):
+    even_str=string[i]
+    print(even_str,end="")
 print()
+
+for j in range(1,len(string),2):
+    odd_string=string[j]
+    print(odd_string,end="")
+print()"""
+
+"""def sort(list):
+    for i in range(len(list)-1,0,-1):
+        for j in range(i):
+            if list[j]>list[j+1]:
+                temp=list[j]
+                list[j]=list[j+1]
+                list[j+1]=temp
+list=[5,3,8,6,7,2]
+sort(list)"""
+
+"""def sort(list):
+    for i in range(len(list)):
+        minpos=i
+        for j in range(i,len(list)):
+            if list[j]<list[minpos]:
+                minpos=j
+        temp=list[i]
+        list[i]=list[minpos]
+        list[minpos]=temp
+list=[5,3,8,6,7,2]
+sort(list)
+print(list)"""
+
+i=0
+while i<10:
+    if i==5:
+        break
+    print(i)
+    i+=1
+
+print("  ")
+i=0
+while i<10:
+    i+=1
+    if i==5:
+        continue
+    print(i)

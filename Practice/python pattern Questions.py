@@ -269,7 +269,7 @@ for i in range(0,rows):
     k=k-1
     for j in range(0,i+1):
         print("*",end=" ")
-    print(" ")
+    print(" ")"""
 
 rows=5
 k=2*rows-2
@@ -279,7 +279,7 @@ for i in range(6,-1,-1):
     k+=1
     for j in range(0,i+1):
         print("*",end=" ")
-    print()"""
+    print()
 
 """rows=int(input("enter no of rows: "))
 for i in range(1,rows+1):
