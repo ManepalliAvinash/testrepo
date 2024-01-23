@@ -407,3 +407,66 @@ for row in curs:
 
 driver.close()"""
 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+"""driver=webdriver.Chrome()
+driver.get("https://www.google.com/")
+driver.switch_to.new_window("Tab")
+driver.get("https://www.amazon.in/")
+time.sleep(5)
+elm=driver.window_handles
+driver.switch_to.window(elm[0])
+time.sleep(5)
+"""
+
+"""num=int(input("enter number: "))
+for i in range(2,num):
+    for j in range(2,i):
+        if(i%j)==0:
+            print("prme")
+            breaki"""
+
+"""class Person():
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def greet(self):
+        print("Hello i am ${Name} i am ${Age} old".format(Name=self.name,Age=self.age))
+
+
+person1=Person("groot",22)
+person2=Person("hulk",23)
+
+print(person1.name)
+print(person1.age)
+print(person2.name)
+
+person1.greet()
+person2.greet()"""
+
+class BankAccount():
+    def __init__(self,accountNumber,Name,Balance):
+        self.accountumber=accountNumber
+        self.Name=Name
+        self.Balance=Balance
+
+    def deposit(self,depositAmount):
+        self.depositAmount=depositAmount
+        AccountBalance=self.Balance+self.depositAmount
+        self.Balance=AccountBalance
+        print(self.Balance)
+
+    def withdraw(self,withdrawAmount):
+        self.withdrawAmount=withdrawAmount
+        AccountBalance=self.Balance-self.withdrawAmount
+        self.Balance=AccountBalance
+        print(self.Balance)
+
+person1=BankAccount(12345,"groot",10000)
+person2=BankAccount(65965,"hulk",20500)
+
+person1.deposit(2003)
+person1.withdraw(10000)
+
