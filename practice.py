@@ -1143,7 +1143,7 @@ list=[5,3,8,6,7,2]
 sort(list)
 print(list)"""
 
-i=0
+"""i=0
 while i<10:
     if i==5:
         break
@@ -1156,4 +1156,554 @@ while i<10:
     i+=1
     if i==5:
         continue
+    print(i)"""
+
+"""num1=eval(input("enter number1: "))
+num2=eval(input("enter number2: "))
+oper=input("enter the operator (+,-,*,/) : ")
+
+if oper=="+":
+    print(num1+num2)
+elif oper=="-":
+    print(num1-num2)
+elif oper=="*":
+    print(num1*num2)
+elif oper=="/":
+    print(num1/num2)
+else:
+    print("operator not found")
+
+
+print(num1)
+print(num2)"""
+
+"""prime=int(input("enter number: "))
+if prime>1:
+    for i in range(2,prime):
+        if (prime%i==0):
+            print("not prime")
+            break
+    else:
+        print("prime")"""
+
+"""sum=0
+for num in range(2,101):
+    i=2
+    for i in range(2,num):
+        if (num%i==0):
+            i=num
+            break
+
+    if i is not num:
+        sum+=i
+
+
+print(sum)"""
+
+"""def even(n):
+    return n%2==0
+def mul(n):
+    return n*2
+num=[1,2,3,4,5,6,7,8,9]
+
+def sum(a,b):
+    return a+b
+
+even_list=list(filter(even,num))
+print(even_list)
+double_list=list(map(mul,even_list))
+print(double_list)
+
+from functools import reduce
+sum_of_list=reduce(sum,double_list)
+print(sum_of_list)
+
+
+list=[i for i in range(1,10)]
+print(list)"""
+
+
+"""list=[i for i in range(1,10) if i%2!=0]
+print(list)
+
+rows=int(input("enter number of rows: "))"""
+"""for i in range(1,rows+1):
+    stars="*"*(i*2-1)
+    spaces=" "*(rows-i)
+    print(spaces+stars)
+
+for i in range(1,rows+1):
+    spaces=" "*(rows-i)
+    stars="*"*i
+    print(spaces+stars)
+"""
+
+"""for i in range(1,rows+1):
+    if i%2==0:
+        spaces=" "*(rows-i)
+        stars="*"*(i*2-1)
+        print(spaces+stars)
+    else:
+        spaces=" "*(rows-i)
+        dash="-"*(i*2-1)
+        print(spaces+dash)"""
+
+"""for i in range(1,rows):
+    spaces=" "*(rows-i)
+    stars="*"*(i*2-1)
+    print(spaces+stars)
+for j in range(rows,0,-1):
+    stars="*"*(j*2-1)
+    spaces=" "*(rows-j)
+    print(spaces+stars)"""
+
+"""for i in range(1,10):
+    if (i==5):
+        break
     print(i)
+
+for j in range(1,10):
+    if (j==5):
+        continue
+    print(j)"""
+"""
+i=0
+while i<10:
+    if i==5:
+        break
+    print(i)
+    i+=1"""
+
+"""i=1
+while i<10:
+    i += 1
+    if i==5:
+        continue
+    print(i)"""
+
+
+"""i=5
+while i>0:
+    print(i)
+    i-=1"""
+
+import math
+
+"""class student():
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def greet(self):
+        return "Hello i am {Name} & i am {Age} old".format(Name=self.name,Age=self.age)
+
+
+person1=student("groot",22)
+person2=student("honey",21)
+
+print(person1.name)
+print(person1.age)
+
+print(person1.greet())
+print(person2.greet())"""
+
+
+"""class BankAccount():
+    def __init__(self,AccountNumber,balance):
+        self.AccountNumber=AccountNumber
+        self.balance=balance
+
+    def deposit(self,Deposit):
+        self.Deposit=Deposit
+        self.balance=self.Deposit+self.balance
+        return "Your Account Balance {Balance}".format(Balance=self.balance)
+
+    def withdraw(self,Withdraw):
+        self.Withdraw=Withdraw
+        self.balance=self.balance-self.Withdraw
+        return "Your Account Balance {Balance}".format(Balance=self.balance)
+
+person1=BankAccount(12345,10000)
+person2=BankAccount(67890,20000)
+
+print(person1.deposit(6000))
+print(person1.withdraw(100))
+print(person2.deposit(100))
+print(person2.withdraw(10000))"""
+
+
+"""num=int(input("enter the number: "))
+for i in range(1,10):
+    mul=num*i
+    print(num,"*",i,"=",mul)"""
+
+
+"""if num >1:
+    for i in range(2,num):
+        if (num%i==0):
+            print("not prime")
+            break
+    else:
+        print("prime")"""
+
+"""even=[]
+odd=[]
+
+for i in range(0,num):
+    if (i%2==0):
+        even.append(i)
+    else:
+        odd.append(i)
+print(even)
+print(odd)"""
+
+"""list=[1,2,3,4,5,6,7,8,9,10]
+even_idx=[]
+odd_idx=[]
+length=len(list)
+for i in range(0,length):
+    if (i%2==0):
+        even_idx.append(list[i])
+    else:
+        odd_idx.append((list[i]))
+
+print(even_idx)
+print(odd_idx)"""
+
+"""percent=int(input("enter percentage obtanined: "))
+if percent>90 and percent<100:
+    print("A Grade")
+elif percent<=90 and percent>80:
+    print("B Grade")
+elif percent<=80 and percent>70:
+    print("C Grade")
+elif percent<=70 and percent>60:
+    print("D Grade")
+elif percent<=60 and percent>50:
+    print("E Grade")
+else:
+    print("Fail")"""
+
+
+"""str="Hello welcome to my world"
+print(str[::-1])
+"""
+
+"""def func(a,*b):
+    c=a
+    for i in b:
+        c=c+i
+    print(c)
+
+func(10,1,2,3,4,5,6)"""
+
+
+"""x=20
+print(x)
+def func():
+    global x
+    x=10
+    print(x)
+
+func()
+print(x)"""
+
+
+"""def func():
+    global x
+    x=20
+    print(x)
+
+func()
+print(x)"""
+
+"""x=10
+def func():
+    globals()['x']=100
+    print(x)                    # we can modify the global variable using globals( ) function 
+                                        exp: globals()['var']= value                                    
+
+func()
+print(x)
+
+def fuc():
+    global z
+    z=10
+    print(z)
+fuc()
+print(z)"""
+
+"""class student():
+    school="sist"
+
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    @classmethod
+    def greet(cls):
+        return cls.school
+
+    def greetings(self):
+        return "hello i am {} i am {} old".format(self.name,self.age)
+
+person1=student("groot",22)
+print(student.greet())
+print(person1.greet())
+print(person1.greetings())"""
+
+
+
+"""class student():
+    school="sist"
+
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    @classmethod
+    def greet(cls):
+        return cls.school
+
+    def greetings(self):
+        return "hello i am {} i am {} old".format(self.name,self.age)
+    @staticmethod
+    def info():
+        print("welcome to static method")
+
+
+person1=student("groot",22)
+print(student.greet())
+print(person1.greet())
+print(person1.greetings())
+person1.info()
+student.info()"""
+
+"""class Employee:
+    Emp_raise=1.04
+    Emp_count=0
+    def __init__(self,first,last,pay):
+        self.first=first
+        self.last=last
+        self.pay=pay
+        self.email= first+"."+last+"@company.com"
+
+        Employee.Emp_count+=1
+
+
+    def fullname(self):
+        return "{} {}".format(self.first,self.last)
+
+    def pay_raise(self):
+        return (self.pay * self.Emp_raise)
+
+    @classmethod
+    def set_emp_raise(cls,new_raise):
+        cls.Emp_raise=new_raise
+
+    @classmethod
+    def from_string(cls,new_string):
+        first,last,pay=new_string.split("-")
+        return cls(first,last,pay)
+
+
+    @staticmethod
+    def check_weekday(day):
+        if day.weekday()==5 or day.weekday()==6:
+            return False
+        return True
+
+emp1=Employee("groot","green",10000)
+emp2=Employee("hulk","green",20000)
+
+
+
+emp3="jhon-dhes-2000"
+empx=Employee.from_string(emp3)
+print(empx.fullname())
+import datetime
+new_date=datetime.date(2024,2,5)
+print(Employee.check_weekday(new_date))"""
+
+
+"""class Employee:
+    Emp_raise=1.05
+
+    def __init__(self,first,last,pay):
+        self.first=first
+        self.last=last
+        self.pay=pay
+        self.email= first+"."+last+"@company.com"
+
+
+    def fullname(self):
+        return "{} {}".format(self.first,self.last)
+
+    def pay_raise(self):
+        self.pay=int(self.pay*self.Emp_raise)
+
+    @classmethod
+    def set_emp_raise(cls,new_raise):
+        cls.Emp_raise=new_raise
+
+emp1=Employee("groot","g",2000)
+emp2=Employee("Hulk","h",1000)
+
+class Developers(Employee):
+    Emp_raise = 2.01
+
+    def __init__(self,first,last,pay,prog_lang):
+        super().__init__(first,last,pay)
+        self.prog_lang=prog_lang
+
+class Manager(Employee):
+
+    def __init__(self,first,last,pay,employee=None):
+        super().__init__(first,last,pay)
+        if employee is None:
+            self.employee=[]
+        else:
+            self.employee=employee
+
+    def add_emp(self,emp):
+        if emp not in self.employee:
+            self.employee.append(emp)
+
+    def rem_emp(self,emp):
+        if emp not in self.employee:
+            self.employee.remove(emp)
+
+    def print_all_employee(self):
+        for i in self.employee:
+            print(i.fullname())
+
+Dev1=Developers ("teddy","t",3000,"python")
+Dev2=Developers("donna","d",2000,"c++")
+
+
+mnrg1=Manager("hanna","deby",30000)
+mnrg1.add_emp(Dev2)
+mnrg1.add_emp(Dev1)
+mnrg1.rem_emp(Dev2)
+print(mnrg1.print_all_employee())"""
+
+
+"""def even(n):
+    return n%2==0
+
+num=[1,2,3,4,5,6,7,8,9]
+
+x=list(filter(even,num))
+print(x)
+
+def mul(n):
+    return n*2
+
+y=list(map(mul,x))
+print(y)
+
+def sum(a,b):
+    return a+b
+
+from functools import reduce
+
+z=reduce(sum,y)
+print(z)"""
+
+"""dicts={"model":"swift","year":2009,"color":"red"}
+for key,value in dicts.items():
+    print([key,value])"""
+
+"""x={1,2,3,4}
+y={1,2}
+print(x.intersection(y))
+print(x.issubset(y))
+print(x.issuperset(y))
+z=x.update(y)
+print(z)"""
+
+"""x={"groot":{1,2},"hulk":{2,5}}
+y={"thor":{3},"groot":{1}}
+
+words=["apple","banana","grapes","apple","orange","banana","melon","cherry","grapes"]
+
+fruits_count={}
+
+for i in words:
+    fruits_count[i]=words.count(i)
+
+print(fruits_count)"""
+
+"""strs=input("enter string: ")
+vowels={'a':0,'e':0,'i':0,'o':0,'u':0}
+
+for i in strs:
+    if i in vowels:
+        vowels[i]+=1
+print(vowels)"""
+
+"""exp_str="hello welcome to my world"
+
+print(exp_str.count('e'))
+print(exp_str.istitle())
+print(exp_str.isprintable())
+print(exp_str.isspace())
+print(exp_str.split())
+x=exp_str.split("e")
+print(x)
+print("e".join(x))"""
+
+"""def fib():
+    a=0
+    b=1
+    print(a)
+    print(b)
+    for i in range(2,10):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+
+fib()
+
+def fact(n):
+    if n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+
+print(fact(4))"""
+
+"""import re
+
+str="Hello welcome"
+
+search=re.match("me",str)
+if search:
+    print("successful")
+else:
+    print("unsuccessful")
+
+reg=re.findall("He..o",str)
+print(reg)
+reg=re.findall('[a-z]',str)
+print(reg)"""
+
+"""with open("file.txt","r") as file:
+    f=file.readlines()
+for i in f:
+    x=i.strip().split(" ")
+    print(x)"""
+
+"""with open("file.txt","w") as file:
+    f=file.write("Hello ninja")
+    file.close()
+
+with open("file.txt","r") as file:
+    x=file.read()
+    print(x)"""
+
+"""strs="Hello"
+if  not type(strs) is int:
+    raise TypeError("it is not integer type")"""
+
+with open("file.txt","a") as file:
+    f=file.append("hello")

@@ -12,6 +12,7 @@ for i in range(1,rows+1):
     print(" ")"""
 import time
 
+import mysqlx.connection
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.select import Select
 
@@ -446,7 +447,7 @@ print(person2.name)
 person1.greet()
 person2.greet()"""
 
-class BankAccount():
+""""class BankAccount():
     def __init__(self,accountNumber,Name,Balance):
         self.accountumber=accountNumber
         self.Name=Name
@@ -468,5 +469,39 @@ person1=BankAccount(12345,"groot",10000)
 person2=BankAccount(65965,"hulk",20500)
 
 person1.deposit(2003)
-person1.withdraw(10000)
+person1.withdraw(10000)"""
 
+
+"""import openpyxl
+file="C:/Users/SARIKA/Desktop/Excel/Fixed_Deposit.xlsx"
+workload=openpyxl.load_workbook(file)
+sheet=workload["Sheet1"]
+
+rows=sheet.max_row
+columns=sheet.max_column
+print(rows,columns)
+
+for r in range(1,rows+1):
+    for c in range(1,columns+1):
+        print(sheet.cell(r,c).value)
+    print()"""
+
+import mysql.connector
+
+cmd1="create table data2 (sno int(2),sname varchar(20),marks int(2))"
+insert1="insert into data2 values(1,'groot',20)"
+insert2="insert into data2 values(2,'danny',22)"
+insert3="insert into data2 values(3,'coddy',22)"
+insert4="insert into data2 values(4,'donna',21)"
+
+con=mysql.connector.connect(host="localhost", port=3306, user="root", password="root", database="automation")
+curs=con.cursor()
+
+curs.execute(cmd1)
+curs.execute(insert1)
+curs.execute(insert2)
+curs.execute(insert3)
+curs.execute(insert4)
+con.commit()
+con.close()
+print("Completed")

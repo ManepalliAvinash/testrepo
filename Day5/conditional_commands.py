@@ -10,11 +10,11 @@ driver.maximize_window()
 #print("dispaly_status : ",search_box.is_displayed())
 
 #is_enabled
-#print("display_status : ",search_box.is_enabled())
-#driver.close()
+print("display_status : ",search_box.is_enabled())
+driver.close()
 
 #is_selected
-rd_male=driver.find_element(By.XPATH,"//input[@id='gender-male']")
+"""rd_male=driver.find_element(By.XPATH,"//input[@id='gender-male']")
 rd_female=driver.find_element(By.XPATH,"//input[@id='gender-female']")
 print("before_status : ",rd_male.is_selected())
 print("before_status : ",rd_female.is_selected())
@@ -23,4 +23,4 @@ rd_male.click()
 rd_female.click()
 print("after_status : ",rd_male.is_selected())
 print("after_status : ",rd_female.is_selected())
-driver.close()
+driver.close()"""
