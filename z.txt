@@ -1,4 +1,4 @@
 Hello everyone
 we are learning I/O
-using Java
-I like programming in Java
+using Python
+I like programming in Python

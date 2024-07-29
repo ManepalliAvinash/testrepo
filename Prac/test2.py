@@ -482,6 +482,13 @@ driver.find_element(By.XPATH,"//*[@id='fdMatVal']/div[2]/a[2]").click()
 time.sleep(5)
 driver.close()"""
 
-
-
-
+num=int(input("enter number:" ))
+if num>1:
+    for i in range(2,num):
+        if (num%i==0):
+            print("not prime")
+            break
+    else:
+        print("prime")
+else:
+    print("num less than 1")

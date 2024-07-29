@@ -1705,5 +1705,241 @@ with open("file.txt","r") as file:
 if  not type(strs) is int:
     raise TypeError("it is not integer type")"""
 
-with open("file.txt","a") as file:
-    f=file.append("hello")
+"""str="a1b2c3"
+length=len(str)
+word=""
+for i in range(0,length,2):
+    letter=str[i]
+    value=int(str[i+1])
+    word+=letter*value
+print(word)"""
+
+"""input_str = "a1b1c3"
+output_str = ""
+
+for i in range(0, len(input_str), 2):
+    char = input_str[i]
+    count = int(input_str[i + 1])
+    output_str += char * count
+
+print(output_str)"""
+
+"""str="a6b3c7"
+number=[]
+letter=[]
+for i in range(0,len(str),2):
+    letter.append(str[i])
+for i in range(1,len(str),2):
+    number.append(str[i])
+
+value=number.index(max(number))
+freq=letter[value]
+print(freq)"""
+
+x=10
+
+"""class emp1:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def feature1(self):
+        print("feature 1 is working",self.name)
+
+    def feature2(self):
+        print("feature 2 is working",self.age)
+
+class emp2(emp1):
+    def __init__(self,name,age):
+        super().__init__(name,age)
+    def feature3(self):
+        print("feature 3 is working",self.name)
+
+    def feature4(self):
+        print("feature 4 is working",self.age)
+
+person1=emp1("hulk",10)
+person2=emp2("groot",22)
+person1.feature1()
+person1.feature2()
+
+print("emp2")
+
+person2.feature1()
+person2.feature2()
+person2.feature3()
+person2.feature4()"""
+
+"""class A:
+    def __init__(self):
+        print("init of a")
+
+    def feature1(self):
+        print("feature 1 is working")
+
+    def feature2(self):
+        print("feature 2 is working")
+
+class B:
+    def __init__(self):
+        print("init of B")
+    def feature3(self):
+        print("feature 3 is working")
+
+    def feature4(self):
+        print("feature 4 is working")
+
+class C(A,B):
+    def __init__(self):
+        super().__init__()
+        print("init of c")
+
+    def feature5(self):
+        print("feature 5 is working")"""
+
+"""def get_string(string,target_len):
+    str_list=string.split(" ")
+    print(str_list)
+
+    for i in str_list:
+        if target_len==len(i):
+            return str_list.index(i)
+        else:
+            return -1
+
+string="this is a string"
+target_len=4
+print(get_string(string,target_len))"""
+
+
+"""def find_position(string, target_length):
+    words = string.split()
+
+    for idx, word in enumerate(words, start=0):
+        if len(word) == target_length:
+            return idx
+
+    return -1  # Return -1 if no such word is found
+
+
+# Example usage
+input_string = "this is a string"
+target_length = 4
+output = find_position(input_string, target_length)
+
+print(output)
+"""
+
+y="10"
+"""lets=int(y)
+print(type(lets))
+
+z=5+3j
+print(int(z))"""
+
+"""with open("z.txt","w") as f:
+    f.write("Hello everyone\nwe are learning I/O\nusing Java\nI like programming in Java")"""
+"""def file_read_write():
+    with open("z.txt","r") as f:
+        lines=f.read()
+    content=lines.replace("Java","Python")
+    print(content)
+    
+    with open("z.txt","w") as f:
+        f.write(content)
+file_read_write()"""
+word="learning"
+"""with open("z.txt","r") as f:
+    data=f.read()
+    if(data.find(word)!=-1):
+        print("found")
+    else:
+        print("not found")"""
+"""
+with open("z.txt","r") as f:
+    lines=f.readlines()
+    count=0
+    for line in lines:
+        if word in line.strip():
+            count+=1
+            print("in line: ",count)
+        else:
+            print("Not present")"""
+"""lst1 = [1, 2, 3, 4]
+lst2 = [1, 2, 3,6]
+contain_lst=all(i in lst1 for i in lst2)
+if contain_lst:
+    print("lst2 is sublist of lst1")
+else:
+    print("lst2 is not sublist of lst1")"""
+
+"""count=0
+with open("x.txt","r") as f:
+    num=f.read()
+    lst=num.split(",")
+    for i in lst:
+        if int(i)%2==0:
+            count+=1
+print(count)"""
+
+"""class Employee:
+    Emp_raise=1.05
+
+    def __init__(self,first,last,pay):
+        self.first=first
+        self.last=last
+        self.pay=pay
+        self.email= first+"."+last+"@company.com"
+
+
+    def fullname(self):
+        return "{} {}".format(self.first,self.last)
+
+    def pay_raise(self):
+        self.pay=int(self.pay*self.Emp_raise)
+        return self.pay
+
+    @classmethod
+    def set_emp_raise(cls,new_raise):
+        cls.Emp_raise=new_raise
+
+emp1=Employee("groot","g",2000)
+emp2=Employee("Hulk","h",1000)
+print(emp1.Emp_raise)
+print(emp2.Emp_raise)
+Employee.set_emp_raise(2.5)
+print(emp1.Emp_raise)
+print(emp2.Emp_raise)
+
+print(emp1.pay_raise())
+print(emp2.pay_raise())
+
+str="Hello-20-22"
+print(str.split("-"))"""
+
+
+class complex:
+    def __init__(self,img,real):
+        self.img=img
+        self.real=real
+
+    def show(self):
+        print(self.real,"i","+",self.img,"j")
+
+    """def sum(self,num2):
+        max_real=self.real+num2.real
+        max_img=self.img+num2.img
+        return complex(max_img,max_real)"""
+
+    def __add__(self, num2):
+        max_real = self.real + num2.real
+        max_img = self.img + num2.img
+        return complex(max_img, max_real)
+
+num1=complex(2,3)
+num1.show()
+num2=complex(4,5)
+num2.show()
+num3=num1+num2
+num3.show()
+

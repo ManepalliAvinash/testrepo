@@ -14,7 +14,7 @@ for link in links:
         res=requests.head(url)
     except:
         None
-    if res.status_code>400:
+    if res.status_code>=400:
         print(url,"is broken link")
         count+=1
     else: 
